@@ -14,10 +14,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-/*
-const user = auth.currentUser;
-console.log("USER:", user);*/
-
 function updateUserProfile(user) {
     const username = user.displayName;
     const useremail = user.email;
